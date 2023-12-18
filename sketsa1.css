@@ -1,0 +1,185 @@
+body {
+    margin: 0px;
+    color: white;
+    font-family: Maharlika;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .textkanan,
+.textkiri {
+    flex-basis: 50%;
+}
+
+
+footer {
+    height: 100px;
+
+
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel img {
+
+    width: 100vw;
+    height: 70vh;
+}
+
+
+
+.textkanan ul>li {
+    flex-basis: 75%;
+    display: inline-block;
+}
+
+.textkiri {
+
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.textkanan {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+}
+
+.kanan {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+
+}
+
+.kanan img {
+    text-align: center;
+}
+
+.kanan .ar2,
+.ar3 {
+    align-self: center;
+    flex-direction: row;
+    flex-basis: 50%;
+}
+
+.bawah {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.bawah div {
+    flex-basis: 50%;
+}
+
+.bawah .image-bawah {
+    margin: 1em;
+}
+
+
+.atas .image {
+    text-align: center;
+    margin: 1em;
+}
+
+.bawah .image-bawah {
+    text-align: center;
+}
+
+.ar2,
+.ar3 {
+    max-height: 100%;
+}
+
+.bawah .judul {
+    font-size: 3em;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.judul {
+    font-size: 2em;
+}
+
+
+
+/* .textkiri,
+.textkanan,
+.judul,
+.subjudul,.text-bawah {
+    color: white;
+} */
+
+
+
+
+
+
+@media(min-width:576px) {
+    body {
+        background-color: khaki;
+    }
+
+    .bawah {
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .atas {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .atas .ar1 {
+        flex-basis: 50%;
+    }
+
+    .atas .kanan {
+        display: flex;
+        justify-content: center;
+        flex-basis: 50%;
+        flex-direction: column;
+    }
+
+    .bawah div {
+        flex-basis: 25%;
+    }
+
+    .ar1 .image {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .text {
+        margin: 10px;
+    }
+
+    .bawah .judul {
+
+        text-align: center;
+        font-size: 3em;
+        margin: 1em 0em;
+    }
+    .kanan{
+        flex-wrap: unset;
+    }
+    
+
+
+}
