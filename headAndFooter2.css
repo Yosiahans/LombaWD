@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+    /* font-family: 'Wix Modefor Display'; */
+}
+
+nav ul>li {
+    display: inline-block;
+    margin: 0% 1em;
+    top: 0px;
+}
+
+nav {
+    top: 0px;
+}
+
+header {
+    height: 105px;
+    display: grid;    
+}
+
+.nav-menu {
+    display: none;
+}
+
+.web-name {
+    margin-left: 1em;
+    font-size: 2em;
+    position: relative;
+    top: 1em;
+}
+button {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+footer>.image-footer {
+    text-align: center;
+}
+.menu-footer {
+    font-size: 1em;
+}
+footer img{
+    width: 40%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+@media (min-width:1024px) {
+    .nav-menu {
+        display: unset;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-menu a:hover {
+        color: brown;
+    }
+
+    .nav-menu ul>li {
+        display: inline-block;
+        margin: 1em;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 30% 20% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: 'nusantaraku menus image';
+        align-items: center;
+    }
+
+    .footer>p {
+        grid-area: nusantaraku;
+    }
+
+    .menu-footer {
+        grid-area: menus;
+    }
+
+    .footer>.image-footer {
+        grid-area: image;        
+    }
+
+    
+}

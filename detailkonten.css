@@ -1,0 +1,43 @@
+.content{
+    margin: 0.5em;
+}
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+img {
+    border-radius: 1em;
+    width: 100%;
+}
+.kanan .title{
+    display: none;
+}
+
+@media (min-width:1024px) {
+    .content .title{
+        display: none;
+    }
+    .kanan .title{
+        display: unset;
+    }
+    .flex {
+        gap: 1em;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kanan {
+        display: grid;
+        
+        flex-basis: 50%;
+    }
+
+    .kiri {
+        flex-basis: 45%;
+    }
+}

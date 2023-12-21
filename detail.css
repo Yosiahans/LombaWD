@@ -1,0 +1,37 @@
+.container {
+    margin: 0px;
+    width: 100vw;
+}
+.image-top img{
+    max-width: 100%;
+    /* max-height: 50vh; */
+}
+.text-content-title{
+    margin-left: 1em    ;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+.text-content-top {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: justify;
+
+}
+.image-top img {
+    width: 100%;
+    /* max-height: 50vh; */
+}
+@media (min-width:1024px) {
+    
+    .text-content-title{
+        margin-top: 2em;
+        margin-left: 1.5em;
+        font-size: 2em;
+    }
+    .text-content-top {
+        margin-left: 5em;
+        margin-right: 10em;
+
+    }
+}
