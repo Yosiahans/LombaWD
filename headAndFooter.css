@@ -64,6 +64,7 @@ footer>.image-footer {
 footer img {
     width: 100%;
     aspect-ratio: 2/1;
+    border-radius: 1em;
 }
 
 a {

@@ -327,8 +327,15 @@ h3 {
         display: none;
     }
 
-    .title .text-info {
+    .text-content-1 {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
+    .title .text-info {
+        margin-bottom: 1em;
         display: unset;
 
     }
@@ -351,7 +358,7 @@ h3 {
         flex-basis: 23%;
     }
 
-    .dest-content{
+    .dest-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
