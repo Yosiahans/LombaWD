@@ -23,7 +23,6 @@ body{
 .baca {
     background-color: black;
     color: white;
-
     margin: 1em;
     padding: 0.5em;
 }
@@ -37,7 +36,7 @@ body{
     font-size: 2em;
     /* padding: 8px 12px; */
     position: absolute;
-    top: 20%;
+    top: 17%;
     width: 100%;
     text-align: center;
     margin-top: 7vw;
