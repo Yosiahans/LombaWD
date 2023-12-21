@@ -1,6 +1,7 @@
-body{
+body {
     font-family: 'Rubik';
 }
+
 .container {
     /* margin: 1em; */
     width: 100%;
@@ -100,17 +101,17 @@ button {
     background-color: black;
     color: white;
     display: grid;
-    grid-column: auto;
-    grid-template-rows: 10% auto auto 5%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto 5%;
     grid-template-areas: 'text '
-        'atas ' 'bawah'
-        'baca';
+        'atas ' 'bawah' 'baca'
+    ;
     height: auto;
 
 }
-.info-budaya .blank{
-    display: unset;
-    color: red;
+
+.info-budaya .white {
+    display: none;
 }
 
 a {
@@ -159,10 +160,12 @@ a {
 .content1 {
     grid-area: atas;
 }
+
 .text-content-1 p {
     display: none;
 }
-.text-content-1 .text-info{
+
+.text-content-1 .text-info {
     display: none;
 }
 
@@ -193,17 +196,19 @@ h3 {
     padding: 0.5em;
 
     flex-basis: 45%;
- 
+
 }
-.img-content{
+
+.img-content {
     text-align: center;
 }
 
 .img-content img {
-    
+
     width: 95%;
 }
-.text-content{
+
+.text-content {
     text-align: left;
 }
 
@@ -283,19 +288,49 @@ h3 {
         justify-content: center;
         align-items: center;
     }
+
     /* .info-budaya .text-info{
         display: none;
     } */
-    .text-content-1 .text-info{
+
+    .text-content-1 {
+        height: auto;
+        /* display: flex;
+        flex-direction: column; */
+        /* height: ; */
+
+    }
+
+    /* .text-content-1 .text-info {
+        display: unset;
+    } */
+
+    .text-content-1 p {
         display: unset;
     }
-    
-    .text-content-1 p{
-        display: unset;
-    }
-    .text-content-1 .text-info{
+
+    .text-content-1 .text-info {
         margin: 0px;
         margin-bottom: 1em;
+    }
+
+    /* .info-budaya {
+        height: 600px;
+    } */
+
+    .info-budaya .white {
+        display: unset;
+        grid-area: text;
+    }
+
+    .info-budaya .text-info {
+        display: none;
+    }
+
+    .title .text-info {
+
+        display: unset;
+
     }
 
     .info-bottom {
@@ -304,7 +339,6 @@ h3 {
         justify-content: center;
     }
 
-
     .info-bottom h1,
     h2,
     h3 {
@@ -312,22 +346,22 @@ h3 {
     }
 
     .content {
-        
+
         height: auto;
         flex-basis: 23%;
     }
 
+    .dest-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .image-dest img {
         width: 70%;
     }
 
     .dest {
-        margin: 0% 20%;
+        flex-basis: 46.75%;
     }
-
-
-
-
-
 }

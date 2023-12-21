@@ -15,7 +15,7 @@ nav {
 
 header {
     height: 105px;
-    display: grid;    
+    display: grid;
 }
 
 .nav-menu {
@@ -28,6 +28,7 @@ header {
     position: relative;
     top: 1em;
 }
+
 button {
     background-color: black;
     color: white;
@@ -40,19 +41,32 @@ footer {
     color: white;
     display: flex;
     flex-direction: column;
+    padding: 1em;
+}
 
+.text-tag {
+    text-align: justify;
+    font-size: 0.75em;
 }
 
 footer>.image-footer {
     text-align: center;
 }
+
 .menu-footer {
     font-size: 1em;
 }
-footer img{
-    width: 40%;
+
+.menu-footer p {
+    text-decoration: underline;
 }
-a{
+
+footer img {
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
@@ -81,6 +95,7 @@ a{
         display: inline-block;
         margin: 1em;
     }
+
     footer {
         display: grid;
         grid-template-columns: 30% 20% 50%;
@@ -93,13 +108,17 @@ a{
         grid-area: nusantaraku;
     }
 
+    .text-tag {
+        margin-right: 2em;
+    }
+
     .menu-footer {
         grid-area: menus;
     }
 
     .footer>.image-footer {
-        grid-area: image;        
+        grid-area: image;
     }
 
-    
+
 }
