@@ -183,6 +183,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom:2em;
 }
 
 .info-bottom h1,
@@ -258,6 +259,11 @@ h3 {
     .text-image-top {
         font-size: 5em;
         top: 30%;
+    }
+    .container-info {
+    margin-top:2em;
+    margin-bottom:1em;
+    /* grid-template-rows: 700px; */
     }
 
     .content-top {
