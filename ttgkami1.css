@@ -1,0 +1,28 @@
+body {
+    font-family: helvatica;
+}
+
+.content {
+    text-align: justify;
+    margin: 1em;
+}
+.ttgkami img {
+    width: 100%;
+}
+
+@media (min-width:1024px) {
+
+
+
+    .ttgkami {
+        display: flex;
+        gap: 1em;
+    }
+
+    .kiri,
+    .kanan {
+        flex-basis: 50%;
+    }
+
+    
+}
